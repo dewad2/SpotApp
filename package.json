@@ -1,0 +1,23 @@
+{
+  "name": "spotapp",
+  "version": "1.0.0",
+  "description": "Dani de Waal's application for the Spotify New York City Technology Fellowship Program, September 2018.",
+  "main": "Question1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dewad2/SpotApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dewad2/SpotApp/issues"
+  },
+  "homepage": "https://github.com/dewad2/SpotApp#readme",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  }
+}

@@ -11,12 +11,15 @@
 
 function changePossibilities(amount, denoms) {
   let subAmountCount = new Array(amount + 1).fill(0);
-  subAmountCount[0] = 1;
   for (let i = 0; i < denoms.length; i++) {
     let coin = denoms[i];
     subAmountCount.forEach((count, subAmount) => {
       if (coin <= subAmount) {
-        subAmountCount[subAmount] += subAmountCount[subAmount - coin];
+        if (subAmount - coin === 0) {
+          subAmountCount[subAmount] += 1;
+        } else {
+          subAmountCount[subAmount] += subAmountCount[subAmount - coin];
+        }
       }
     });
   }
